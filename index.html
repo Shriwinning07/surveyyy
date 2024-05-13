@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Survey</h1>
+    <form id="survey-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="question1">What is your favorite color?</label><br>
+        <input type="radio" id="color_red" name="color" value="red">
+        <label for="color_red">Red</label><br>
+        <input type="radio" id="color_blue" name="color" value="blue">
+        <label for="color_blue">Blue</label><br>
+        <input type="radio" id="color_green" name="color" value="green">
+        <label for="color_green">Green</label><br>
+        <br>
+
+        <label for="question2">What is your favorite movie genre?</label><br>
+        <select id="genre" name="genre" required>
+            <option value="">Select Genre</option>
+            <option value="comedy">Comedy</option>
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="scifi">Sci-Fi</option>
+        </select><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
